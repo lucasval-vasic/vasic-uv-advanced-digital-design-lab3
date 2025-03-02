@@ -7,10 +7,6 @@
 ### General Description
 The Synchronous FIFO (First-In-First-Out) module is designed to manage data flow between two systems operating at the same clock frequency. It provides a buffer to store data temporarily, ensuring smooth data transfer without loss or overflow.
 
-
-### Code
-The code for the FIFO may be found at TODO
-
 ### Features
 - Width: Configurable data width (default: 32 bits)
 - Depth: Configurable FIFO depth (default: 8 entries)
