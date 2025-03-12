@@ -1,4 +1,4 @@
-#Lab 3 - Logical synthesis and Design for Test
+# Lab 3 - Logical synthesis and Design for Test
 
 ## Introduction
 On this lab we will get acquainted with the logical synthesis tool from Cadence: Genus.
