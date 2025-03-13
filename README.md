@@ -179,7 +179,7 @@ Finally check out final.rpt. This is a summary table of different metrics across
 
 ## Restoring design
 
-During each of the synthesis stages a snapshot is stored in the rep folder, named STAGE_BLOCK_NAME.db, where STAGE is each of the synthesis stages. We can quickly restore any of these checkpoints with the read_db command:
+During each of the synthesis stages a snapshot is stored in the rep folder, named STAGE_BLOCK_NAME.db, where STAGE is each of the synthesis stages. We can quickly restore any of these checkpoints with the read_db command, from a fresh Genus session:
 
 ```commandline
 read_db ../rep/STAGE_BLOCK_NAME.db
@@ -290,7 +290,7 @@ Then we need to enable insertion of scan compression with the DO_SCAN_COMPRESSIO
 
 We also need to set the compression ratio at the top of scan_define.tcl. Values between 20 and 30 are usual.
 
-Finally, we need to add the names for the newly added ports in the scan_define.tcl script.
+Finally, we need to add the names for the newly added ports in the scan_insert.tcl script.
 
 After re-running the synthesis and ensuring that the compressor was properly inserted (check out the rep/dft_insert_report_dft_chains_w_comp.rep report and check that the compressed chain length matches the original chain size divided by the compression ratio), re-run Modus. You will see that there are 2 ATPG vector generation stages, the first for COMPRESSION and the second one for FULLSCAN, which increases coverage with a reduced pattern count.
 
