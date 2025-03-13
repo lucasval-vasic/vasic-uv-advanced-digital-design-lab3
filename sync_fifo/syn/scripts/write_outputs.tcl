@@ -18,5 +18,5 @@ if $DO_SCAN_COMPRESSION {
 }
 
 if $DO_INSERT_SCAN {
-  write_dft_atpg -directory $OUTPUTS_PATH $compression_option -run_from_directory -library /home/lvalent/training/RTL_DFT_OPCG_COMP_GENUS_MODUS23.10/LIBS/verilog/typical.v
+  write_dft_atpg -directory $OUTPUTS_PATH $compression_option -run_from_directory -library /eda/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v
 }
