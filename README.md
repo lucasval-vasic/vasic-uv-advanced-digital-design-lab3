@@ -1,9 +1,29 @@
 # Lab 3 - Logical synthesis and Design for Test
 
-## Introduction
-On this lab we will get acquainted with the logical synthesis tool from Cadence: Genus.
 
-During the lab you will first get an introduction to the TCL language used in EDA tools, then create timing constraints for synthesis and then get familiar with the different steps in the synthesis task and finally you will insert scan chains into a design.
+## Introduction
+In this lab, you will be introduced to Cadence Genus, a powerful tool for logical synthesis.
+
+Throughout the session, you will explore the key steps involved in the synthesis process and learn how to insert scan chains into a design.
+
+The lab provides files for the sync_fifo design, targeting the Cadence 45nm. Upon completing the core exercises, you will have the opportunity to extend your work by porting the design to the Google SkyWater 130nm process.
+
+## Lab evaluation
+You are required to produce a lab report that documents the actions and experiments described in this guide. Present the results of your experiments using text, screenshots, or any other appropriate media.
+
+## Evaluation rubric
+The following breakdown shows how each section of this lab contributes to the overall marks:
+
+- Initial synthesis: 1 point
+- Effort level: 1 point
+- Retiming: 1 point
+- DFT - RTL edits: 1 point
+- DFT - run synthesis: 1 point
+- DFT - Modus ATPG: 1 point
+- Compression DFT - RTL edits: 1 point
+- Compression DFT - run synthesis: 1 point
+- Compression DFT - Modus ATPG: 1 point
+- Synthesize with alternate process: 1 point
 
 ## TCL
 
@@ -165,7 +185,7 @@ After some screens of text output the synthesis process should complete without 
 
 ## Synthesis reports
 
-Now that our initial synthesis run has completed we will examine the multiple report files written out by Genus. Notice how many reports repeat from synthesis state to synthesis stage. This may be useful when debugging some area or timing issue. For now we will concentrate on the reports from final stage, after all the mapping and optimizations have been completed.
+Now that our initial synthesis run has completed we will examine the multiple report files written out by Genus. Notice how many reports repeat from synthesis stage to synthesis stage. This may be useful when debugging some area or timing issue. For now we will concentrate on the reports from final stage, after all the mapping and optimizations have been completed.
 
 Check out the final_gates.rpt. Notice how it describes the total gate count, plus counter per gate type and includes an estimation of leakage power.
 
